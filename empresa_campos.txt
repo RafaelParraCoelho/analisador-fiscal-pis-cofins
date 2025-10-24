@@ -1,0 +1,44 @@
+# Campos simplificados por registro (EFD-Contribuições didático)
+# Observação: estrutura didática para teste técnico; não substitui o leiaute oficial do PVA/SPED.
+ 
+[0000] Abertura do arquivo digital e identificação da PJ
+1 REG            -> Código do registro (fixo "0000")
+2 DT_INI         -> Data inicial do período (YYYYMMDD)
+3 DT_FIN         -> Data final do período (YYYYMMDD)
+4 NOME           -> Razão social
+5 CNPJ           -> CNPJ da entidade (14 dígitos)
+ 
+[C001] Abertura do Bloco C
+1 REG            -> Código do registro (fixo "C001")
+2 IND_MOV        -> Indicador de movimento (0=com dados; 1=sem dados)
+ 
+[C100] Documento fiscal (NF/NF-e)
+1 REG            -> Código do registro (fixo "C100")
+2 IND_OPER       -> Indicador da operação (0=Entrada; 1=Saída)
+3 IND_EMIT       -> Indicador do emitente (0=Emissão própria; 1=Terceiros)
+4 COD_MOD        -> Modelo do documento (55=NF-e)
+5 COD_SIT        -> Situação do documento (00=Regular)
+6 SER            -> Série do documento
+7 NUM_DOC        -> Número do documento
+8 CHV_NFE        -> Chave da NF-e (44 dígitos)
+9 DT_DOC         -> Data de emissão (YYYYMMDD)
+10 DT_E_S        -> Data da entrada/saída (YYYYMMDD)
+11 VL_DOC        -> Valor total do documento
+12 IND_PGTO      -> Indicador de pagamento (0=à vista; 1=a prazo; 2=outros)
+ 
+[C170] Itens do documento
+1  REG           -> Código do registro (fixo "C170")
+2  NUM_ITEM      -> Número sequencial do item na NF
+3  COD_ITEM      -> Código do item (produto/serviço)
+4  DESCR_COMPL   -> Descrição complementar do item
+5  QTD           -> Quantidade
+6  UNID          -> Unidade de medida
+7  VL_ITEM       -> Valor do item
+8  CST_PIS       -> Código da Situação Tributária do PIS (ex.: 01, 50)
+9  VL_BC_PIS     -> Base de cálculo do PIS
+10 ALIQ_PIS      -> Alíquota PIS (%)
+11 VL_PIS        -> Valor do PIS
+12 CST_COFINS    -> Código da Situação Tributária da COFINS (ex.: 01, 50)
+13 VL_BC_COFINS  -> Base de cálculo da COFINS
+14 ALIQ_COFINS   -> Alíquota COFINS (%)
+15 VL_COFINS     -> Valor da COFINS
