@@ -1,12 +1,14 @@
-## 🧾 Analisador Fiscal PIS/COFINS
+### 🧾 Analisador Fiscal PIS/COFINS 
 
 ### 📘 Descrição
+
 Este projeto tem como objetivo **automatizar a leitura e a análise de arquivos fiscais**, especialmente **registros do SPED PIS/COFINS**, organizando as informações de forma hierárquica e estruturada.  
 O programa percorre o arquivo texto original, identifica os registros principais e seus filhos, e gera uma **estrutura completa de dados** para posterior tratamento ou exportação.
 
 ---
 
 ### ⚙️ Funcionalidades
+
 - Leitura de arquivos `.txt` contendo registros fiscais (ex: `0000`, `C001`, `C100`, `C170` etc);
 - Montagem hierárquica dos dados, preservando a estrutura dos blocos;
 - Exportação do resultado para arquivo `.txt` organizado (ex: `estrutura_hierarquica_completa.txt`);
@@ -38,7 +40,8 @@ REG|DT_INI|DT_FIN|NOME|CNPJ|REG|IND_OPER|IND_EMIT|COD_MOD|COD_SIT|SER|NUM_DOC|..
 
 ---
 
-### 📦 Estrutura do Projeto
+###  📦 Estrutura do Projeto
+
 ```
 ├── empresa.txt
 ├── estrutura_hierarquica_completa.txt
@@ -50,6 +53,7 @@ REG|DT_INI|DT_FIN|NOME|CNPJ|REG|IND_OPER|IND_EMIT|COD_MOD|COD_SIT|SER|NUM_DOC|..
 ---
 
 ### 🧰 Tecnologias Utilizadas
+
 - **Python 3.10+**
 - **VS Code**
 - **Git / GitHub**
@@ -58,6 +62,7 @@ REG|DT_INI|DT_FIN|NOME|CNPJ|REG|IND_OPER|IND_EMIT|COD_MOD|COD_SIT|SER|NUM_DOC|..
 ---
 
 ### 🚀 Como executar
+
 1. Clone o repositório:
    ```bash
    git clone https://github.com/RafaelParraCoelho/analisador-fiscal-pis-cofins.git
@@ -78,6 +83,7 @@ REG|DT_INI|DT_FIN|NOME|CNPJ|REG|IND_OPER|IND_EMIT|COD_MOD|COD_SIT|SER|NUM_DOC|..
 ---
 
 ### ✨ Autor
+
 **Rafael Parra Coelho**  
 💼 Assistente de Dados • Python | Automação Fiscal  
 🌐 [GitHub](https://github.com/RafaelParraCoelho)
